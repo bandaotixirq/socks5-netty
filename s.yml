@@ -24,10 +24,8 @@ services:
         caPort: 11080
         customRuntimeConfig:
           command:
-            - java
-          args:
-            - '-jar'
             - deploy/proxy/bin/proxy
+          args:
             - start
       triggers:
         - name: httpTrigger
