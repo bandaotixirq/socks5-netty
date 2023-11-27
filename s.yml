@@ -27,7 +27,7 @@ services:
             - java
           args:
             - '-jar'
-            - bin/proxy/bin/proxy
+            - deploy/proxy/bin/proxy
             - start
       triggers:
         - name: httpTrigger
