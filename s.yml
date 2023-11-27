@@ -24,9 +24,10 @@ services:
         caPort: 11080
         customRuntimeConfig:
           command:
-            - deploy/proxy/bin/proxy
+            - java
           args:
-            - start
+            - jar
+            - target/socks5-netty.jar
       triggers:
         - name: httpTrigger
           type: http
